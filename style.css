@@ -7,6 +7,28 @@ body {
   font-size: 62.5%;
   font-family: "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif; }
 
+h1 {
+  font-size: 3.5rem;
+  background: #888;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  font-weight: normal; }
+
+h2 {
+  font-size: 2.8rem;
+  background: #eee;
+  color: #888;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: normal; }
+
+/* --------------------
+
+ボタンレッスン
+
+----------------------- */
 .btn {
   margin-bottom: 50px;
   text-align: center; }
@@ -22,14 +44,17 @@ body {
 
 .btn1 a {
   background: orange;
+  /* ここからborder-radiusプロパティを追加 */
   border-radius: 10px; }
 
 .btn2 a {
   background: skyblue;
+  /* ここからborder-radiusプロパティを追加 */
   border-radius: 30px; }
 
 .btn3 a {
   background: pink;
+  /* ここからborder-radiusプロパティを追加 */
   border-radius: 20px 0 20px 0; }
 
 .btn4 a {
@@ -37,30 +62,145 @@ body {
   height: 100px;
   line-height: 100px;
   background: #9b4dca;
-  border-radius: 50%;
-  padding: 0; }
-
-h1 {
-  font-size: 3.5rem;
-  background: blue;
-  color: #fff;
-  padding: 30px 0;
-  text-align: center;
-  margin-bottom: 50px;
-  font-weight: normal; }
+  padding: 0;
+  /* ここからborder-radiusプロパティを追加 */
+  border-radius: 50%; }
 
 .btn5 img {
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 10px;
   -o-object-position: -60px 0;
-     object-position: -60px 0; }
+     object-position: -60px 0;
+  /* ここからborder-radiusプロパティを追加 */
+  border-radius: 10px; }
 
 .btn6 img {
   width: 200px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  /* ここからborder-radiusプロパティを追加 */
   border-radius: 50%; }
+
+/* --------------------
+
+シャドウレッスン
+
+----------------------- */
+.btn7 a {
+  background: limegreen;
+  /* ここからbox-shadowプロパティを追加 */
+  -webkit-box-shadow: 3px 3px 3px #888;
+          box-shadow: 3px 3px 3px #888; }
+
+.btn8 a {
+  background: yellow;
+  color: #888;
+  border-radius: 30px;
+  /* ここからbox-shadowプロパティを追加 */
+  -webkit-box-shadow: 0 0 10px #888;
+          box-shadow: 0 0 10px #888; }
+
+.btn9 a {
+  background: aqua;
+  color: #888;
+  /* ここからbox-shadowプロパティを追加 */
+  -webkit-box-shadow: 5px 5px 0 #aaa;
+          box-shadow: 5px 5px 0 #aaa; }
+
+.btn10 a {
+  background: #ffc2a6;
+  color: #888;
+  /* ここからbox-shadowプロパティを追加 */
+  -webkit-box-shadow: 0 0 10px #888 inset;
+          box-shadow: 0 0 10px #888 inset; }
+
+.shadow-text {
+  text-align: center;
+  font-size: 4.6rem;
+  font-weight: bold;
+  margin-bottom: 30px; }
+
+.shadow1 {
+  /* ここからtext-shadowプロパティを追加 */
+  text-shadow: 3px 3px 3px rgba(255, 0, 0, 0.3); }
+
+.shadow2 {
+  /* ここからtext-shadowプロパティを追加 */
+  text-shadow: 3px 3px 0 rgba(255, 0, 0, 0.3); }
+
+.shadow-section {
+  margin-bottom: 50px; }
+
+/* --------------------
+
+グラデーションレッスン
+
+----------------------- */
+.gradation a {
+  width: 300px;
+  height: 300px;
+  color: #888;
+  line-height: 300px;
+  padding: 0; }
+
+.gradation1 a {
+  /* ここからlinear-gradientを追加 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#cffcef), to(#ccc3fa));
+  background: linear-gradient(#cffcef 0%, #ccc3fa 100%); }
+
+.gradation2 a {
+  /* ここからlinear-gradientを追加 */
+  background: linear-gradient(45deg, #cffcef 0%, #ccc3fa 100%); }
+
+.gradation3 a {
+  color: #555;
+  /* ここからrepeating-linear-gradientを追加 */
+  background: repeating-linear-gradient(45deg, #cffcef, #cffcef 8px, #ccc3fa 8px, #ccc3fa 16px); }
+
+.gradation4 a {
+  color: #555;
+  /* ここからrepeating-linear-gradientを追加 */
+  background: repeating-linear-gradient(#cffcef, #cffcef 8px, #ccc3fa 8px, #ccc3fa 16px); }
+
+/* --------------------
+
+ホバーレッスン
+
+----------------------- */
+.btn11 a {
+  background: #facdca;
+  /* ここからホバーした時のCSSを追加 */ }
+  .btn11 a:hover {
+    background: #d0cafa; }
+
+.btn12 a {
+  background: #d0cafa;
+  /* ここからホバーした時のCSSを追加 */
+  -webkit-transition: 1s;
+  transition: 1s; }
+  .btn12 a:hover {
+    background: #facdca; }
+
+.btn13 {
+  position: relative;
+  width: 200px;
+  height: 45px;
+  margin: auto; }
+  .btn13 a {
+    background: #f6f7b8;
+    -webkit-box-shadow: 0 5px 0 #d8ad4d;
+            box-shadow: 0 5px 0 #d8ad4d;
+    color: #888;
+    /* ここからホバーした時のCSSを追加 */ }
+    .btn13 a:hover {
+      position: absolute;
+      top: 5px;
+      left: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+
+.hover-section {
+  margin-bottom: 50px; }
