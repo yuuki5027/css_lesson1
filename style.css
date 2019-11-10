@@ -204,3 +204,181 @@ h2 {
 
 .hover-section {
   margin-bottom: 50px; }
+
+/* --------------------
+
+ポジションレッスン
+
+----------------------- */
+.position-wrapper {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto 50px;
+  background-color: #d8ad4d;
+  /* ここからポジションのCSSを追加 */
+  position: relative; }
+
+.position-inner1 {
+  width: 200px;
+  height: 200px;
+  background-color: forestgreen;
+  /* ここからポジションのCSSを追加 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.position-inner {
+  width: 100px;
+  height: 100px;
+  /* ここからポジションのCSSを追加 */
+  position: absolute; }
+
+.position-inner2 {
+  background-color: forestgreen;
+  /* ここからポジションのCSSを追加 */
+  top: 50px;
+  left: 50px;
+  z-index: 3; }
+
+.position-inner3 {
+  background-color: yellow;
+  /* ここからポジションのCSSを追加 */
+  top: 10px;
+  left: 10px;
+  z-index: 1; }
+
+.position-inner4 {
+  background-color: coral;
+  /* ここからポジションのCSSを追加 */
+  top: 100px;
+  left: 100px;
+  z-index: 2; }
+
+/* --------------------
+
+トランスフォームレッスン
+
+----------------------- */
+.transform {
+  margin-bottom: 50px; }
+  .transform a {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+    -webkit-transition: .5s;
+    transition: .5s; }
+
+.transform1 a {
+  background: orange; }
+  .transform1 a:hover {
+    /* ここからトランスフォームのCSSを追加 */
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+
+.transform2 a {
+  background: forestgreen; }
+  .transform2 a:hover {
+    /* ここからトランスフォームのCSSを追加 */
+    -webkit-transform: translate(500px, 50px);
+            transform: translate(500px, 50px); }
+
+.transform3 a {
+  background: coral; }
+  .transform3 a:hover {
+    /* ここからトランスフォームのCSSを追加 */
+    -webkit-transform: skew(20deg, 30deg);
+            transform: skew(20deg, 30deg); }
+
+.transform4 a {
+  background: purple; }
+  .transform4 a:hover {
+    /* ここからトランスフォームのCSSを追加 */
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2); }
+
+/* --------------------
+
+キーフレームアニメーションレッスン
+
+----------------------- */
+.animation-section {
+  margin-bottom: 50px; }
+
+.animation1 img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 30px auto 50px;
+  /* ここからanimationを追加 */
+  -webkit-animation: loading-animation 1s linear infinite;
+          animation: loading-animation 1s linear infinite; }
+@-webkit-keyframes loading-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@keyframes loading-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+.animation2 {
+  height: 150px; }
+  .animation2 p {
+    color: #000;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 0.1rem; }
+
+.animation-line {
+  width: 2px;
+  height: 150px;
+  margin: auto;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden; }
+  .animation-line:after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    /* ここからanimationを追加 */
+    -webkit-animation: scroll-animation 2s ease-in infinite;
+            animation: scroll-animation 2s ease-in infinite; }
+
+@-webkit-keyframes scroll-animation {
+  0% {
+    top: -50px; }
+  20% {
+    top: 0; }
+  50% {
+    top: 75px; }
+  100% {
+    top: 150px; } }
+
+@keyframes scroll-animation {
+  0% {
+    top: -50px; }
+  20% {
+    top: 0; }
+  50% {
+    top: 75px; }
+  100% {
+    top: 150px; } }

@@ -1,10 +1,12 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	font-size: 62.5%;
 	font-family: "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
 }
+
 h1 {
 	font-size: 3.5rem;
 	background: #888;
@@ -13,6 +15,7 @@ h1 {
 	text-align: center;
 	font-weight: normal;
 }
+
 h2 {
 	font-size: 2.8rem;
 	background: #eee;
@@ -22,6 +25,7 @@ h2 {
 	margin-bottom: 50px;
 	font-weight: normal;
 }
+
 /* --------------------
 
 ボタンレッスン
@@ -30,6 +34,7 @@ h2 {
 .btn {
 	margin-bottom: 50px;
 	text-align: center;
+
 	a {
 		text-decoration: none;
 		text-align: center;
@@ -41,57 +46,64 @@ h2 {
 		font-size: 1.5rem;
 	}
 }
+
 .btn1 {
 	a {
 		background: orange;
-/* ここからborder-radiusプロパティを追加 */
-	  border-radius: 10px;
+		/* ここからborder-radiusプロパティを追加 */
+		border-radius: 10px;
 	}
 }
+
 .btn2 {
 	a {
 		background: skyblue;
-/* ここからborder-radiusプロパティを追加 */
+		/* ここからborder-radiusプロパティを追加 */
 		border-radius: 30px;
 	}
 }
+
 .btn3 {
 	a {
 		background: pink;
-/* ここからborder-radiusプロパティを追加 */
+		/* ここからborder-radiusプロパティを追加 */
 		border-radius: 20px 0 20px 0;
 	}
 }
+
 .btn4 {
 	a {
 		width: 100px;
 		height: 100px;
 		line-height: 100px;
-		background: #9b4dca;		
+		background: #9b4dca;
 		padding: 0;
-/* ここからborder-radiusプロパティを追加 */
+		/* ここからborder-radiusプロパティを追加 */
 		border-radius: 50%;
 	}
 }
+
 .btn5 {
 	img {
 		width: 200px;
 		height: 200px;
 		object-fit: cover;
 		object-position: -60px 0;
-/* ここからborder-radiusプロパティを追加 */
+		/* ここからborder-radiusプロパティを追加 */
 		border-radius: 10px;
 	}
 }
+
 .btn6 {
 	img {
 		width: 200px;
 		height: 200px;
 		object-fit: cover;
-/* ここからborder-radiusプロパティを追加 */
+		/* ここからborder-radiusプロパティを追加 */
 		border-radius: 50%;
 	}
 }
+
 /* --------------------
 
 シャドウレッスン
@@ -100,52 +112,60 @@ h2 {
 .btn7 {
 	a {
 		background: limegreen;
-/* ここからbox-shadowプロパティを追加 */
+		/* ここからbox-shadowプロパティを追加 */
 		box-shadow: 3px 3px 3px #888;
 	}
 }
+
 .btn8 {
 	a {
 		background: yellow;
 		color: #888;
 		border-radius: 30px;
-/* ここからbox-shadowプロパティを追加 */
+		/* ここからbox-shadowプロパティを追加 */
 		box-shadow: 0 0 10px #888;
 	}
 }
+
 .btn9 {
 	a {
 		background: aqua;
 		color: #888;
-/* ここからbox-shadowプロパティを追加 */
+		/* ここからbox-shadowプロパティを追加 */
 		box-shadow: 5px 5px 0 #aaa;
 	}
 }
+
 .btn10 {
 	a {
 		background: #ffc2a6;
 		color: #888;
-/* ここからbox-shadowプロパティを追加 */
-		box-shadow: 0 0 10px #888 inset; 
+		/* ここからbox-shadowプロパティを追加 */
+		box-shadow: 0 0 10px #888 inset;
 	}
 }
+
 .shadow-text {
 	text-align: center;
 	font-size: 4.6rem;
 	font-weight: bold;
 	margin-bottom: 30px;
 }
+
 .shadow1 {
-/* ここからtext-shadowプロパティを追加 */
-	text-shadow: 3px 3px 3px rgba(255,0,0,.3);
+	/* ここからtext-shadowプロパティを追加 */
+	text-shadow: 3px 3px 3px rgba(255, 0, 0, .3);
 }
+
 .shadow2 {
-/* ここからtext-shadowプロパティを追加 */
-	text-shadow: 3px 3px 0 rgba(255,0,0,.3);
+	/* ここからtext-shadowプロパティを追加 */
+	text-shadow: 3px 3px 0 rgba(255, 0, 0, .3);
 }
+
 .shadow-section {
 	margin-bottom: 50px;
 }
+
 /* --------------------
 
 グラデーションレッスン
@@ -160,32 +180,37 @@ h2 {
 		padding: 0;
 	}
 }
+
 .gradation1 {
 	a {
-/* ここからlinear-gradientを追加 */
+		/* ここからlinear-gradientを追加 */
 		background: linear-gradient(#cffcef 0%, #ccc3fa 100%);
 	}
 }
+
 .gradation2 {
 	a {
-/* ここからlinear-gradientを追加 */
-		background: linear-gradient(45deg,#cffcef 0%, #ccc3fa 100%);
+		/* ここからlinear-gradientを追加 */
+		background: linear-gradient(45deg, #cffcef 0%, #ccc3fa 100%);
 	}
 }
+
 .gradation3 {
 	a {
 		color: #555;
-/* ここからrepeating-linear-gradientを追加 */
-		background: repeating-linear-gradient(45deg,#cffcef,#cffcef 8px,#ccc3fa 8px,#ccc3fa 16px);
+		/* ここからrepeating-linear-gradientを追加 */
+		background: repeating-linear-gradient(45deg, #cffcef, #cffcef 8px, #ccc3fa 8px, #ccc3fa 16px);
 	}
 }
+
 .gradation4 {
 	a {
 		color: #555;
-/* ここからrepeating-linear-gradientを追加 */
-		background: repeating-linear-gradient(#cffcef,#cffcef 8px,#ccc3fa 8px,#ccc3fa 16px);
+		/* ここからrepeating-linear-gradientを追加 */
+		background: repeating-linear-gradient(#cffcef, #cffcef 8px, #ccc3fa 8px, #ccc3fa 16px);
 	}
 }
+
 /* --------------------
 
 ホバーレッスン
@@ -193,32 +218,38 @@ h2 {
 ----------------------- */
 .btn11 {
 	a {
-		background: #facdca;	
-/* ここからホバーした時のCSSを追加 */
+		background: #facdca;
+
+		/* ここからホバーした時のCSSを追加 */
 		&:hover {
 			background: #d0cafa;
 		}
 	}
 }
+
 .btn12 {
 	a {
 		background: #d0cafa;
-/* ここからホバーした時のCSSを追加 */
+		/* ここからホバーした時のCSSを追加 */
 		transition: 1s;
+
 		&:hover {
 			background: #facdca;
 		}
 	}
 }
+
 .btn13 {
 	position: relative;
 	width: 200px;
 	height: 45px;
 	margin: auto;
+
 	a {
 		background: #f6f7b8;
 		box-shadow: 0 5px 0 #d8ad4d;
 		color: #888;
+
 		/* ここからホバーした時のCSSを追加 */
 		&:hover {
 			position: absolute;
@@ -228,6 +259,199 @@ h2 {
 		}
 	}
 }
+
 .hover-section {
 	margin-bottom: 50px;
+}
+
+/* --------------------
+
+ポジションレッスン
+
+----------------------- */
+.position-wrapper {
+	width: 400px;
+	height: 400px;
+	margin: 0 auto 50px;
+	background-color: #d8ad4d;
+	/* ここからポジションのCSSを追加 */
+	position: relative;
+}
+
+.position-inner1 {
+	width: 200px;
+	height: 200px;
+	background-color: forestgreen;
+	/* ここからポジションのCSSを追加 */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.position-inner {
+	width: 100px;
+	height: 100px;
+	/* ここからポジションのCSSを追加 */
+	position: absolute;
+}
+
+.position-inner2 {
+	background-color: forestgreen;
+	/* ここからポジションのCSSを追加 */
+	top: 50px;
+	left: 50px;
+	z-index: 3;
+}
+
+.position-inner3 {
+	background-color: yellow;
+	/* ここからポジションのCSSを追加 */
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+.position-inner4 {
+	background-color: coral;
+	/* ここからポジションのCSSを追加 */
+	top: 100px;
+	left: 100px;
+	z-index: 2;
+}
+
+/* --------------------
+
+トランスフォームレッスン
+
+----------------------- */
+
+.transform {
+	margin-bottom: 50px;
+
+	a {
+		width: 200px;
+		height: 200px;
+		margin: auto;
+		display: block;
+		transition: .5s;
+	}
+}
+
+.transform1 {
+	a {
+		background: orange;
+
+		&:hover {
+			/* ここからトランスフォームのCSSを追加 */
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.transform2 {
+	a {
+		background: forestgreen;
+
+		&:hover {
+			/* ここからトランスフォームのCSSを追加 */
+			transform: translate(500px, 50px);
+		}
+	}
+}
+
+.transform3 {
+	a {
+		background: coral;
+
+		&:hover {
+			/* ここからトランスフォームのCSSを追加 */
+			transform: skew(20deg, 30deg);
+		}
+	}
+}
+
+.transform4 {
+	a {
+		background: purple;
+
+		&:hover {
+			/* ここからトランスフォームのCSSを追加 */
+			transform-origin: left top;
+			transform: scale(2,2);
+			
+		}
+	}
+}
+/* --------------------
+
+キーフレームアニメーションレッスン
+
+----------------------- */
+.animation-section {
+	margin-bottom: 50px;
+}
+.animation1 {
+	img {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: 30px auto 50px;
+		/* ここからanimationを追加 */
+		animation: loading-animation 1s linear infinite;
+	}
+	@keyframes loading-animation {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+}
+.animation2 {
+	height: 150px;
+	p {
+		color: #000;
+		font-size: 1.1rem;
+		text-align: center;
+		margin-bottom: 5px;
+		letter-spacing: 0.1rem;
+	}
+}
+.animation-line {
+	width: 2px;
+	height: 150px;
+	margin: auto;
+	background-color: #eee;
+	position: relative;
+	overflow: hidden;
+	&:after {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		display: block;
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #000;
+		/* ここからanimationを追加 */
+		animation: scroll-animation 2s ease-in infinite;
+	}
+}
+@keyframes scroll-animation {
+	0% {
+		top: -50px;
+	}
+	20% {
+		top: 0;
+	}
+	50% {
+		top: 75px;
+	}
+	100% {
+		top: 150px;
+	}
 }
